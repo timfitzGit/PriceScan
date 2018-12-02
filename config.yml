@@ -1,0 +1,41 @@
+---
+
+# Config file for the PriceScan application
+#
+# 
+General:
+ Current_Dir : 
+ Input_File: BookList.xlsx
+ ShortBookNameLength : 20
+ CSS_SelectorDefault: td.a-color-price
+ Mode:
+  - log file
+  - console
+  - database
+  - excel
+  - text file
+
+Logging:
+ LogFileName: myLogFile
+ CachePageIfCSSnotfound: N
+ Active: Yes
+ Disable_Level: DEBUG
+
+ExcelType:
+ WorkBookFileName: C:\\Users\\Tim\\OneDrive\\Documents\\BookList.xlsx
+ WorksheetTabName: full
+ Item_Column: 2
+ WebSiteURL_Column: 8
+ CSS_SelectorColumn: 9
+ OldPrice_Column: 6
+ NewPrice_Column: 7
+ DataStart_Row: 2
+
+RunStats:
+ LastRunStart: 
+ ItemsProcessed: 
+ ItemsWithErrors: 
+ LastRunEnd: 
+
+
+
